@@ -1,0 +1,14 @@
+#! /usr/bin/mixguile \
+-e main -s
+!#
+
+;;; execute a given program and print the registers.
+
+(define main
+  (lambda (args)
+    ;; load the file provided as a command line argument
+    (mix-load (cadr args))
+    ;; execute it
+    (mix-run)
+    ;; print the contents of registers
+    (mix-pall)))
