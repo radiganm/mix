@@ -1,0 +1,7 @@
+#!/bin/bash
+## apt-get installer (for MDK)
+## Mac Radigan
+
+  apt install mdk -y
+
+## *EOF*
